@@ -1,0 +1,46 @@
+
+<html>
+  <head>
+    <title>Fahrenheit 735</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/react.js"></script>
+  </head>
+  <body>
+    <h1>Fahrenheit 735</h1>
+    <div id="dashboard">
+      <div class="probeSelector probeSelected">1</div>
+      <div class="probeSelector">2</div>
+      <div class="probeSelector">3</div>
+      <div class="probeSelector">4</div>
+      <div style="width:400px;height:300px;float:left;position:relative;clear:left;">
+        <canvas id="myChart" width="400" height="300"></canvas>
+      </div>
+
+      <div id="probeTemp">-&#176;</div>
+      <hr style="clear:left;"/>
+      <input id="eventStart" type="button" value="start"/>
+      <input id="eventStop" type="button" value="stop" style="display:none;"/>
+      <input id="eventComment" type="button" value="comment" style="display:none;"/>
+      <hr/>
+      <div id="eventList"></div>
+      <hr/>
+      <div id="batteryLevel">?</div>
+      <hr/>
+      <div id="status"></div>
+    </div>
+    <div id="eventDisplay" style="display:none;">
+      <h2>EVENT_NAME</h2>
+      <div style="width:400px;height:300px;float:left;position:relative;clear:left;">
+        <canvas id="event_chart" width="400" height="300"></canvas>
+      </div>
+      <hr style="clear:left;"/>
+      <input id="eventDelete" type="button" value="del"/>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/vex.combined.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="js/appl.js"></script>
+  </body>
+</html>
